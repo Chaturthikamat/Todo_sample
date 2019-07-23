@@ -1,6 +1,6 @@
 /* Basic Style */
 body {
-    background: url("grad.jpg");
+    background-image: url("../images/grad.jpg");
     color: #333;
     font-family: Arial, Helvetica, sans-serif;
   }
