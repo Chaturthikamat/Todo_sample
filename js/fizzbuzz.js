@@ -1,19 +1,7 @@
-for (let i=0; i<100; i++)
-{
-     if(i%3==0 && i%5==0)
-    {
-     console.log("FizzBuzz");
-     }
-        else if(i%3==0)
-    {
-    console.log("Fizz");
-    }
-    else if(i%5==0)
-{
-    console.log("Buzz");
-    }
-    else
-    {
-    console.log(i);
-    }
-}
+
+
+for (i = 1; i <= 30; i++) {
+    var three = i % 3 == 0;
+    var five = i % 5 == 0;
+    console.log(three ? five ? "FizzBuzz" : "Fizz" : five ? "Buzz" : i);
+  }
