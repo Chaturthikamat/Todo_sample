@@ -10,7 +10,7 @@ function fetch() {
   	var fname=document.getElementById("fname").value;
     var lname=document.getElementById("lname").value;
     email= document.getElementById("email").value;
-    num=document.getElementById("num").value;
+	num=document.getElementById("num").value;
 	console.log("Name: "+fname+"\n last name: "+lname+"\n email: "+email+"\n num: "+num);
 
 }
@@ -30,8 +30,14 @@ function valid(){
 }
 
 function store(){
-	localStorage.setItem('fname', fname.value);
-	localStorage.setItem('lname', lname.value);
-	localStorage.setItem('mail',JSON.stringify(email));
-	localStorage.setItem('num', JSON.stringify(num));
+	 var userProfiles ={
+					let firstname=document.getElementById("fname").value;
+					let name=document.getElementById("lname").value;
+					let email= document.getElementById("email").value;
+					let num=document.getElementById("num").value;
+	}
+	console.log(userProfiles);
 }
+
+
+
