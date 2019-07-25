@@ -31,10 +31,15 @@ function valid(){
 
 function store(){
 	 var userProfiles ={
-					let firstname=document.getElementById("fname").value;
-					let name=document.getElementById("lname").value;
+					let firstname=localStorage.setItem('fname', fname.value);
+			
 					let email= document.getElementById("email").value;
 					let num=document.getElementById("num").value;
+
+					let lastname=localStorage.setItem('lname', lname.value);
+	localStorage.setItem('mail',JSON.stringify(email));
+	localStorage.setItem('num', JSON.stringify(num));
+
 	}
 	console.log(userProfiles);
 }
