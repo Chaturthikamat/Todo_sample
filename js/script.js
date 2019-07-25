@@ -1,48 +1,51 @@
+var btn = document.getElementById("myBtn");
+btn.addEventListener('click', submit());
 
+function submit(){
+	//fetch
+	debugger;
+	let fname = document.getElementById("fname").value;
+	let email = document.getElementById("email").value;
+	let num = document.getElementById("num").value;
 
-var btn = document.querySelector('#threefuncs');
-btn.addEventListener('click',fetch);
-btn.addEventListener('click',checkGender);
-btn.addEventListener('click',valid);
-btn.addEventListener('click',store);
-
-function fetch() {
-  	var fname=document.getElementById("fname").value;
-    var lname=document.getElementById("lname").value;
-    email= document.getElementById("email").value;
-	num=document.getElementById("num").value;
-	console.log("Name: "+fname+"\n last name: "+lname+"\n email: "+email+"\n num: "+num);
-
+	//validate form
+	validateForm(fname, lname, email, num);
 }
 
-function checkGender() {				
-	if(document.getElementById('radioMale').checked)
-	console.log("You have selected Male.");
-	else
-	console.log("You have selected Female.");
-}
 
-function valid(){
-	if (this.checked) 
-		console.log("");
-	else 
-		console.log("the console box is checked");
-}
+function validateForm(fname,lname,email,num) {
+	debugger;
 
-function store(){
-	 var userProfiles ={
-					let firstname=localStorage.setItem('fname', fname.value);
-			
-					let email= document.getElementById("email").value;
-					let num=document.getElementById("num").value;
-
-					let lastname=localStorage.setItem('lname', lname.value);
-	localStorage.setItem('mail',JSON.stringify(email));
-	localStorage.setItem('num', JSON.stringify(num));
-
+	if (fname == "") {
+		alert("name field cannot be empty");
+		document.surveyform.fname.focus();
+		return false;
 	}
-	console.log(userProfiles);
+	if (email == "") {
+		alert("Please provide your Email!");
+		document.surveyform.email.focus();
+		return false;
+	}
+	if (num == "" || isNaN(document.surveyform.num.value) ||
+		document.surveyform.num.value.length != 10) {
+
+		alert("Please provide a Phone Number in the proper format.");
+		document.surveyform.num.focus();
+		return false;
+
+		function checkRadio(field) {
+			if (!field.length) {
+				field = [field];
+			}
+			for (var i = 0; i < field.length; i++) {
+				if (field[i].checked) return field[i].value;
+			}
+			return false;
+		}
+	} //fname
+	//lastnma
+	//
+
+
+
 }
-
-
-
