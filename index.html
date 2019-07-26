@@ -1,59 +1,68 @@
 <html>
 
 <head>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <title> Form | Index</title>
 </head>
 
 
 <body>
-  <form name="survey_form" action="#" onsubmit="return(validation())">
-    <div class="form_group">
-      <label>Username</label>
-      <input type="text" name="fname" class="form-content" id="fname">
-    </div>
-    <span id="username"> </span>
+  <div class="container">
+    <form name="survey_form" action="#" onsubmit="return(validation())">
+      <div class="right_form_group">
+        <label class="useid">First name</label>
+        <input type="text" name="fname" class="form-content" id="fname" placeholder="Enter your First name" >
+      </div>
+      <span class="errorfield" id="fname_error"> </span>
 
-    <div class="form_group">
-      <label>email</label>
-      <input type="email" name="email" class="form-content" id="email">
-    </div>
-    <span id="useremail"> </span>
+      <div class="right_form_group">
+          <label class="useid"> Last name</label>
+          <input type="text" name="lname" class="form-content" id="lname" placeholder="Enter your Last name">
+        </div>
+        <span class="errorfield" id="name_error"> </span>
 
-    <div class="form_group">
-      <label>mobile</label>
-      <input type="tel" name="mobnum" class="form-content" id="mobnum">
-    </div>
-    <span id="usernum"> </span>
+      <div class="right_form_group">
+        <label class="useid">email</label>
+        <input type="email" name="email" class="form-content" id="email"                     >
+      </div>
+      <span class="errorfield" id="useremail"> </span>
 
-    <div class="form_group">
-      <input class="inputcheckbox" id="firsthobby" name="hobbies[]" type="checkbox" value="Reading" />
-      <label>Reading</label>
-      <input class="inputcheckbox" id="secondhobby" name="hobbies[]" type="checkbox" value="Writing" />
-      <label>Writing</label>
-      <input class="inputcheckbox" id="thirdhobby" name="hobbies[]" type="checkbox" value="Singing" />
-      <label>Singing</label>
-      <p id="error_message_checkbox"></p>
-    </div>
-    
+      <div id="right_form_group">
+        <label class="useid">mobile</label>
+        <input type="tel" name="mobnum" class="form-content" id="mobnum">
+      </div>
+      <span  id="usernum"> </span>
 
-    <div class="form_group">
-      <label>Gender:</label>
-      <input type="radio" name="gender" id="male" value="Mr.  " />
-      <label>Male</label>
-      <input type="radio" name="gender" id="female" value="Mrs.  " />
-      <label>Female</label>
-      <p id="error_message"></p>
-    </div>
+      <div class="form_group">
+        <input class="inputcheckbox" id="firsthobby" name="hobbies" type="checkbox" value="Reading" />
+        <label class="useid" >Reading</label>
+        <input class="inputcheckbox" id="secondhobby" name="hobbies" type="checkbox" value="Writing" />
+        <label class="useid"> Writing</label>
+        <input class="inputcheckbox" id="thirdhobby" name="hobbies" type="checkbox" value="Singing" />
+        <label class="useid">Singing</label>
+        <p id="error_message_checkbox"></p>
+      </div>
 
 
-    <div>
-      <input type="submit" value="submit">
+      <div class="form_group">
+        <label>Gender:</label>
+        <input type="radio" name="gender" id="male" value="Mr.  " />
+        <label>Male</label>
+        <input type="radio" name="gender" id="female" value="Mrs.  " />
+        <label>Female</label>
+        <p id="error_message"></p>
+      </div>
+ 
+
+  <div>
+    <input type="submit" value="submit" id="btn">
+  </div>
 
 
-      <script src="js/script.js"></script>
+    <script src="js/script.js"></script>
 
 
-  </form>
+    </form>
 </body>
 
 </html>

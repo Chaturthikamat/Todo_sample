@@ -3,7 +3,14 @@ function validation() {
 	//----------------Username validation------------
 	var fname = document.getElementById("fname").value;
 	if (fname == "" || !isNaN(fname)) {
-		document.getElementById("username").innerHTML = "** Error: Please enter the username, do not enter number";
+		document.getElementById("fname_error").innerHTML = "** Error: Please enter the username, do not enter number";
+		return false;
+	}
+
+	//----------------Username validation------------
+	var lname = document.getElementById("lname").value;
+	if (lname == "" || !isNaN(lname)) {
+		document.getElementById("lname_error").innerHTML = "** Error: Please enter the username, do not enter number";
 		return false;
 	}
 	//----------------email validation------------
@@ -56,16 +63,24 @@ function validation() {
 	// 	return false;
 	// }
 
-	//save data
-	let data = [{
-		username: fname,
-		email: email,
-		PhoneNumber: mobnum
-	}];
 
-	//convert data to string
-	var datanew = JSON.stringify(data);
-	//save to the database
-	localStorage.setItem('UserProfiles', datanew)
-	
+	//save data
+	let userprofiles = [];
+	for (i = 0; i < 10; i++) {
+		let data = {
+			username: fname,
+			email: email,
+			PhoneNumber: mobnum
+		};
+
+		//data.push(userprofile);
+
+
+		//convert data to string
+		var datanew = JSON.stringify(data);
+		//save to the database
+		userdata = localStorage.setItem('UserProfiles', datanew);
+		userprofiles.push(userdata);
+		debugger;
+	}
 }
