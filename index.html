@@ -1,53 +1,58 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet/css" href="style.css">
-    <title> Todo | Index</title>
-</head>
-<body>
-    <form class="content__form survey-form" name="surveyform" onsubmit="return(getdata())">
-        <h3> Survey Form</h3>
-        <div class="survey-form__input-group">
-            <label class="namelabel" for="fname">Full Name</label>
-            <input class="inputname" id="fname" name="fname" type="text"/>
-        </div>
-        
 
-        <div class="survey-form__input-group">
-            <label class="contalabel" for="email">Email Address</label>
-            <input class="inputemail" id="email" name="email" type="email"/>
+<html>
+  <head>
+  <title> Form | Index</title>
+  </head>
+  
+  
+  <body>
+  <form name="survey_form" action="#" onclick="return(validation())">
+    <div class="form_group">
+    <label>Username</label>
+    <input type="text" name="fname" class="form-content" id="fname">
+    </div>
+    <span id="username"> </span>
+    
+    <div class="form_group">
+    <label>email</label>
+    <input type="email" name="email" class="form-content" id="email">
+    </div>
+    <span id="useremail"> </span>
+    
+    <div class="form_group">
+    <label>mobile</label>
+    <input type="tel" name="mobnum" class="form-content" id="mobnum">
+    </div>
+    <span id="usernum"> </span> 
+    
+    <div class="form_group" >
+    <label>Gender:</label>
+    <input type="radio"  name="gender"  id="male" value="Mr."/>
+      <label>Male</label>
+      <input type="radio" name="gender" id="female"  value="Mrs."/>
+      <label>Female</label>
+    <p id="error_message"></p>
+    </div>
+    
+    <div class="form_group">
+            <input class="inputcheckbox" id="firsthobby" name="firsthobby" type="checkbox" value="Reading"/>
+            <label>Reading</label>
+            <input class="inputcheckbox" id="secondhobby" name="secondhobby" type="checkbox" value="Writing"/>
+            <label>Writing</label>
+            <input class="inputcheckbox" id="thirdhobby" name="thirdhobby" type="checkbox" value="Singing"/>
+            <label>Singing</label>
           </div>
-
-          <div class="survey-form__input-group">
-            <label class="numlabel" for="num">Phone Number</label>
-            <input class="inputnumber" id="num" name="num" type="tel"/>
-          </div>
-
-        <div class="survey-form__input-group">
-            <input class="inputradio" id="male" name="salutation" type="radio" value="Mr."/>
-            <label class="labelradio" for="male">Male</label>
-            <input class="inputradio" id="female" name="salutation" type="radio" value="Mrs."/>
-            <label class="labelradio" for="female">Female</label>
-          </div>
-
-          <div class="survey-form__input-group">
-          <input class="inputcheckbox" id="firsthobby" name="firsthobby" type="checkbox" value="Reading"/>
-          <label class="labelcheckbox" for="firsthobby">Reading</label>
-          <input class="inputcheckbox" id="secondhobby" name="secondhobby" type="checkbox" value="Writing"/>
-          <label class="labelcheckbox" for="secondhobby">Writing</label>
-          <input class="inputcheckbox" id="thirdhobby" name="thirdhobby" type="checkbox" value="Singing"/>
-          <label class="labelcheckbox" for="thirdhobby">Singing</label>
-        </div>
-        <button type="button" id="myBtn"> Save </button>
- 
-    </form>
-
-    <script  src="./js/script.js"></script>
-
+    </div>
+    
+    
+    <div>
+    <input type="submit" value="submit">
+    
+    
+    <script type="text/javascript" src="/js/script.js">
+    </script>
+    
+  
+  </form>
   </body>
-</html>
-
-
+  </html>

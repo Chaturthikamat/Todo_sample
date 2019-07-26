@@ -1,51 +1,35 @@
-var btn = document.getElementById("myBtn");
-btn.addEventListener('click', submit());
-
-function submit(){
-	//fetch
-	debugger;
-	let fname = document.getElementById("fname").value;
-	let email = document.getElementById("email").value;
-	let num = document.getElementById("num").value;
-
-	//validate form
-	validateForm(fname, lname, email, num);
-}
-
-
-function validateForm(fname,lname,email,num) {
-	debugger;
-
-	if (fname == "") {
-		alert("name field cannot be empty");
-		document.surveyform.fname.focus();
-		return false;
-	}
-	if (email == "") {
-		alert("Please provide your Email!");
-		document.surveyform.email.focus();
-		return false;
-	}
-	if (num == "" || isNaN(document.surveyform.num.value) ||
-		document.surveyform.num.value.length != 10) {
-
-		alert("Please provide a Phone Number in the proper format.");
-		document.surveyform.num.focus();
-		return false;
-
-		function checkRadio(field) {
-			if (!field.length) {
-				field = [field];
-			}
-			for (var i = 0; i < field.length; i++) {
-				if (field[i].checked) return field[i].value;
-			}
+function validation(){
+	var fname=document.getElementById("fname").value;
+		if (fname== "" || !isNaN(fname))
+		{
+			document.getElementById("username").innerHTML="** Error: Please enter the username, do not enter number";
 			return false;
 		}
-	} //fname
-	//lastnma
-	//
+	
+	var email=document.getElementById("email" || email.indexOf('@')<=0).value;
+	if (email == "") {
+		document.getElementById("useremail").innerHTML="** Error: Please enter the email Id in valid format";
+		return false;
+	}
+	
+	var mobnum=document.getElementById("mobnum").value;
+	if (mobnum == "" || mobnum.length != 10 || isNaN(mobnum)){
+	document.getElementById("usernum").innerHTML="** Error: Please enter the 10-digit number";
+		return false;
+	}
 
 
-
+	var radiobox1=document.survey_form.gender;
+	for(i=0;i<radiobox1;i++){
+	if(radiobox1[i]==false){
+		
+	}
+	//document.getElementById("error_message").innerHTML="Select atleast one value";
+	return false;	
+	}
+	
+	
+	
+	
+	
 }
