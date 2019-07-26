@@ -4,8 +4,9 @@
 body {
   background-image: url("../images/grad.jpg");
   color: #333;
-  font-family:'Roboto Condensed', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
 }
+
 .container {
   background: #f4f4f4;
   display: block;
@@ -17,17 +18,18 @@ body {
   font-size: 18px;
   font-weight: bold;
   box-shadow: 2px 2px;
-  flex:1;
+  flex: 1;
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.9);
 }
+
 .form_group {
   text-align: center;
-  
+
   padding: 1rem;
 }
 
-#btn{
-  float:right;
+#btn {
+  float: right;
   background: #33cc33;
   color: #fff;
   text-decoration: bold;
@@ -39,23 +41,22 @@ body {
 
 }
 
-#btn:hover{
+#btn:hover {
   background: green;
-  color:black;
-  border:none;
-  padding: 12px 32px;
+  color: black;
+  border: none;
+  padding: 13px 95px;
 }
 
-.errorfield{
+.errorfield {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   color: red;
   font-weight: bold;
-  text-height: 10px;
   display: inline;
-  float: right;
+
   padding-right: 0;
-  margin:0;
+  margin: 0;
 }
 
 input[type="text"] {
@@ -69,7 +70,7 @@ input[type="text"] {
   border-radius: 6px;
   font-family: Arial, sans-serif;
   color: #888;
-  display:block;
+  display: block;
 }
 
 input[type="email"] {
@@ -82,44 +83,45 @@ input[type="email"] {
   border-radius: 6px;
   font-family: Arial, sans-serif;
   color: #888;
-  display:block;
+  display: block;
   margin-bottom: 8px;
 }
 
 input[type="tel"] {
-    margin: 0;
-    font-size: 14px;
-    line-height: 18px;
-    height: 24px;
-    padding: 18px;
-    border: 1px solid #ddd;
-    background: #fff;
-    border-radius: 6px;
-    font-family: Arial, sans-serif;
-    color: #888;
-    display:block;
-  }
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
+  height: 24px;
+  padding: 18px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 6px;
+  font-family: Arial, sans-serif;
+  color: #888;
+  display: block;
+}
 
-.right_form_group{
-  flex:1;
+.right_form_group {
+  flex: 1;
   align-items: left;
 
 }
 
-.left_form_group{
-  flex:1;
+.left_form_group {
+  flex: 1;
   align-items: right;
   margin-top: 30px;
-  
+
 }
 
-.userinputright{
-  float:right;
-  flex:1;
-  margin-top: 30px;
+.userinputright {
+  float: right;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
-.labelrightcheckbox{
-  float:right;
-  margin-top:25px;
+.labelrightcheckbox {
+  float: right;
+  flex-direction: column;
+  justify-content: flex-start;
 }
