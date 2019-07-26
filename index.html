@@ -23,33 +23,34 @@
 
       <div class="right_form_group">
         <label class="useid">email</label>
-        <input type="email" name="email" class="form-content" id="email"                     >
+        <input type="email" name="email" class="form-content" id="email"  placeholder="Enter your email address">                   
       </div>
       <span class="errorfield" id="useremail"> </span>
 
       <div id="right_form_group">
         <label class="useid">mobile</label>
-        <input type="tel" name="mobnum" class="form-content" id="mobnum">
+        <input type="tel" name="mobnum" class="form-content" id="mobnum" placeholder="">
       </div>
       <span  id="usernum"> </span>
 
-      <div class="form_group">
-        <input class="inputcheckbox" id="firsthobby" name="hobbies" type="checkbox" value="Reading" />
-        <label class="useid" >Reading</label>
-        <input class="inputcheckbox" id="secondhobby" name="hobbies" type="checkbox" value="Writing" />
-        <label class="useid"> Writing</label>
-        <input class="inputcheckbox" id="thirdhobby" name="hobbies" type="checkbox" value="Singing" />
-        <label class="useid">Singing</label>
+      <div class="form_group" id="left_form_group">
+        
+        <input class="userinputright" id="firsthobby" name="hobbies" type="checkbox" value="Reading" />
+        <label class="userinputright" >Reading</label>
+        <input class="userinputright" id="secondhobby" name="hobbies" type="checkbox" value="Writing" />
+        <label class="userinputright"> Writing</label>
+        <input class="userinputright" id="thirdhobby" name="hobbies" type="checkbox" value="Singing" />
+        <label class="userinputright">Singing</label>
         <p id="error_message_checkbox"></p>
       </div>
 
 
-      <div class="form_group">
-        <label>Gender:</label>
-        <input type="radio" name="gender" id="male" value="Mr.  " />
-        <label>Male</label>
-        <input type="radio" name="gender" id="female" value="Mrs.  " />
-        <label>Female</label>
+      <div class="form_group" id="left_form_group">
+        <label class="userinputright">Gender:</label>
+        <input class="userinputright" type="radio" name="gender" id="male" value="Mr.  " />
+        <label class="userinputright">Male</label>
+        <input class="userinputright" type="radio" name="gender" id="female" value="Mrs.  " />
+        <label class="userinputright"> Female</label>
         <p id="error_message"></p>
       </div>
  
