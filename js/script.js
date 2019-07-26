@@ -57,15 +57,15 @@ function validation() {
 	// }
 
 	//save data
-	let data = {
+	let data = [{
 		username: fname,
 		email: email,
 		PhoneNumber: mobnum
-	}
+	}];
 
 	//convert data to string
 	var datanew = JSON.stringify(data);
 	//save to the database
 	localStorage.setItem('UserProfiles', datanew)
-	debugger;
+	
 }
