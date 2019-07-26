@@ -20,16 +20,23 @@ function validation(){
 
 
 	var radiobox1=document.survey_form.gender;
-	for(i=0;i<radiobox1;i++){
-	if(radiobox1[i]==false){
-		
+	for(var i=0;i<radiobox1;i++){
+		if ( ( survey_form.gender[0].checked == false ) && ( survey_form.gender[1].checked == false ) ) {
+		document.getElementById("error_message")="** Error:Please choose your Gender: Male or Female"; 
+		return false;
+			}
+			else{
+				break;
+			}
+}
+
+	var reading=document.getElementById('firsthobby').checked;
+	var writing=document.getElementById('secondhobby').checked;
+	var singing=document.getElementById('thirdhobby').checked;
+	if(reading==false && writing==false && singing==false){
+		alert("Select a hobby");
+		return false;
 	}
-	//document.getElementById("error_message").innerHTML="Select atleast one value";
-	return false;	
-	}
-	
-	
-	
-	
-	
+
+
 }
