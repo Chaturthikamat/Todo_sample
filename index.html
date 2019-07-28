@@ -1,12 +1,13 @@
 <html>
 
 <head>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
   <title> Form | Index</title>
 </head>
 
 
 <body>
+<h2> Survey form </h2>
   <div class="container">
     <form name="survey_form" action="#" onsubmit="return(validation())">
       <div class="right_form_group">
@@ -27,14 +28,14 @@
       </div>
       <span class="errorfield" id="useremail"> </span>
 
-      <div id="right_form_group">
+      <div class="right_form_group">
         <label class="useid">mobile</label>
-        <input type="tel" name="mobnum" class="form-content" id="mobnum" placeholder="">
+        <input type="tel" name="mobnum" class="form-content" id="mobnum" placeholder="Enter your number">
       </div>
       <span id="usernum"> </span>
 
       <div class="form_group" id="left_form_group">
-
+	<label> hobbies:  </label>
         <input class="userinputright" id="firsthobby" name="hobbies" type="checkbox" value="Reading" />
         <label class="userinputright">Reading</label>
         <input class="userinputright" id="secondhobby" name="hobbies" type="checkbox" value="Writing" />
@@ -46,6 +47,7 @@
 
 
       <div class="form_group" id="left_form_group">
+		
         <label class="userinputright">Gender:</label>
         <input class="userinputright" type="radio" name="gender" id="male" value="Mr.  " />
         <label class="userinputright">Male</label>
@@ -59,7 +61,7 @@
   </div>
 
 
-  <script src="js/script.js"></script>
+  <script src="script.js"></script>
 
 
   </form>
