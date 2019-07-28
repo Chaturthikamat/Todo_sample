@@ -38,8 +38,8 @@ function validation() {
 	} */
 
 
-	//---------------------------------RadioButton Validation------------------
-	/* var radiobox1=document.survey_form.gender;
+	---------------------------------RadioButton Validation------------------
+	 var radiobox1=document.survey_form.gender;
 	for(var i=0;i<radiobox1;i++){
 		if ( ( survey_form.gender[0].checked == false ) && ( survey_form.gender[1].checked == false ) ) {
 		document.getElementById("error_message")="** Error:Please choose your Gender: Male or Female"; 
@@ -48,7 +48,7 @@ function validation() {
 			else{
 				break;
 			}
-}*/
+}
 	// var genders = document.getElementsByName("gender");
 	// if (genders[0].checked == true) {
 	// 	//alert("Your gender is male");
@@ -65,22 +65,21 @@ function validation() {
 
 
 	//save data
-	let userprofiles = [];
-	for (i = 0; i < 10; i++) {
+	var userprofiles = [];
 		let data = {
 			username: fname,
 			email: email,
-			PhoneNumber: mobnum
+			PhoneNumber: mobnum,
+			gender: radiobox1
 		};
-
-		//data.push(userprofile);
+		userprofiles.push(data);
+		console.log(userprofiles);
 
 
 		//convert data to string
-		var datanew = JSON.stringify(data);
+		var datanew=JSON.stringify(userprofiles);
 		//save to the database
-		userdata = localStorage.setItem('UserProfiles', datanew);
-		userprofiles.push(userdata);
-		debugger;
-	}
+		localStorage.setItem('UserProfiles', datanew);
+	
+	
 }
