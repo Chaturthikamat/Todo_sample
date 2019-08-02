@@ -11,27 +11,21 @@
 
 <body>
     <div class="main-block">
-    <select id="dropdown">
-        <option class="item" value=""> Timestamp</option>
-        <option class="item" value="millisecond" id="ms" >Millisecond</option>
-        <option class="item" value="second" id="sec">Second</option>
-        <option class="item" value="minute" id="min">Minute</option>
-        <option class="item" value="hour" id="hr">Hours</option>
-        <option class="item" value="day" id="day">Days</option>
-        <option class="item" value="week" id="week">Weeks</option>
-        <option class="item" value="month" id="mon">Months</option>
-        <option class="item" value="year" id="year">Years</option>
-    </select>
+        <select id="dropdown">
+            <option class="item" value="" timestamp=""> Timestamp</option>
+            <option class="item" value="second" id="sec" timestamp="time">Second</option>
+            <option class="item" value="minute" id="min" timestamp="time">Minute</option>
+            <option class="item" value="hour" id="hr" timestamp="time">Hour</option>
+            <option class="item" value="day" id="day" timestamp="date">Day</option>
+            <option class="item" value="month" id="mon" timestamp="month">Month</option>
+            <option class="item" value="year" id="year" timestamp="month">Year</option>
+        </select>
 
-    <input type="textbox" value="" id="rangeselector_min">
-    <input type="textbox" value="" id="rangeselector_max">
-</div>
+        <input type="text" value="" id="rangeselector_min">
+    </div>
 </body>
 
-<script
-  src="https://code.jquery.com/jquery-3.4.1.js"
-  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-  crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="timestamp_range.js"></script>
 
 </html>
