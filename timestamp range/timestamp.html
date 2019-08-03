@@ -12,20 +12,19 @@
 <body>
     <div class="main-block">
         <select id="dropdown">
-            <option class="item" value="" timestamp=""> Timestamp</option>
-            <option class="item" value="second" id="sec" timestamp="time">Second</option>
+            <option class="item" value="second" id="sec" timestamp="number" selected>Second</option>
             <option class="item" value="minute" id="min" timestamp="time">Minute</option>
             <option class="item" value="hour" id="hr" timestamp="time">Hour</option>
             <option class="item" value="day" id="day" timestamp="date">Day</option>
+            <option class="item" value="day" id="day" timestamp="week">Week</option>
             <option class="item" value="month" id="mon" timestamp="month">Month</option>
             <option class="item" value="year" id="year" timestamp="month">Year</option>
         </select>
-
         <input type="text" value="" id="rangeselector_min">
+        <button id="getdata"> Apply</button>  
     </div>
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="timestamp_range.js"></script>
-
 </html>

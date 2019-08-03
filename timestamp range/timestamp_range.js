@@ -19,22 +19,33 @@ $(document).ready(function () {
     let tyeAttr = $("option:selected").attr("timestamp");
     switch (this.value) {
       case 'second':
+        //console.log("second");
+         $("#rangeselector_min").attr("type", tyeAttr);
+        break;
       case 'minute':
       case 'hour':
-        console.log("hour");
+        //console.log("hour");
         $("#rangeselector_min").attr("type", tyeAttr);
         break;
       case 'day':
-        console.log("day");
+        //console.log("day");
         $("#rangeselector_min").attr("type", tyeAttr);
         break;
+        case 'week':
+          //console.log("week");
+          $("#rangeselector_min").attr("type", tyeAttr);
+          break;
       case 'month':
       case 'year':
-        console.log("month");
+        //console.log("month");
         $("#rangeselector_min").attr("type", tyeAttr);
         break;
     }
 
   });
 
+});
+
+$("#getdata").click(function(){
+  console.log($("#rangeselector_min").val());
 });
