@@ -7,19 +7,29 @@ body {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
+h2{
+	background: #f4f4f4;
+	color: #333;
+	text-align: center;
+	margin-bottom:0;
+	margin-top:40px;
+	font-size: 34px;
+}
+
 .container {
   background: #f4f4f4;
   display: block;
-  width: 600px;
-  margin: 25vh auto;
-  padding: 50px;
+  width: 50%;
+  margin: 7vh auto;
+  padding: 35px;
   border: 1px solid #fff;
   border-radius: 12px;
   font-size: 18px;
   font-weight: bold;
   box-shadow: 2px 2px;
-  flex: 1;
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.9);
+  overflow: hidden;
+  height: 60%;
 }
 
 .form_group {
@@ -33,11 +43,13 @@ body {
   background: #33cc33;
   color: #fff;
   text-decoration: bold;
-  padding: 10px 90px;
+  padding: 10px 99px;
   border: 1px solid;
   border-radius: 9px;
   cursor: pointer;
   font-size: 19px;
+  margin-top: 30px;
+  margin-left: -10px;
 
 }
 
@@ -45,7 +57,8 @@ body {
   background: green;
   color: black;
   border: none;
-  padding: 13px 95px;
+  padding: 18px 99px;
+  
 }
 
 .errorfield {
@@ -101,27 +114,24 @@ input[type="tel"] {
   display: block;
 }
 
-.right_form_group {
-  flex: 1;
-  align-items: left;
-
+.right_form_group{
+	float:left;
+	width: 50%;
+	display: block;
+	height: 50px;
+	align-items: left;
+	overflow: hidden;
+	padding: 15px;
+	
 }
 
-.left_form_group {
-  flex: 1;
-  align-items: right;
-  margin-top: 30px;
-
-}
-
-.userinputright {
-  float: right;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-.labelrightcheckbox {
-  float: right;
-  flex-direction: column;
-  justify-content: flex-start;
+.left_form_group{
+	float: left;
+	width: 50%;
+	display: block;
+	height: 50px;
+	padding: 40px;
+	align-items: right;
+	overflow: hidden;
+	margin-top: 30px;
 }
