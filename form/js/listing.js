@@ -1,6 +1,8 @@
-    //let arrusers = getdata()
-    
-    document.getElementById("btn").onclick= location.href = "../html/display.html";
-    alert("your are in getdata function");
-    document.getElementId("dataDisplay").innerHTML =datanew; 
-fname= ""
+$(document).ready(function () {
+    var display = JSON.parse(localStorage.getItem('UserData'));
+
+    for (i = 0; i < display.length; i++) {
+        let liItem = "<li>" + display[i].firstname + "</li>";
+        $("ol").append(liItem);
+    }
+});
