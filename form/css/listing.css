@@ -1,0 +1,49 @@
+.container{
+    background: #f4f4f4;
+    align-items: center; 
+    height: 100vh;
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 34px;
+    color: #333333;
+    text-align: center;
+    
+    height: 44px;  
+    padding-top: 10px;
+
+}
+
+.listitem{
+    margin: 10px;
+    color: #333333;
+    font-family: Arial, Helvetica, sans-serif; 
+    padding: 18px;
+    background: #ffffff;
+    border-radius: 6px;
+}
+
+.dataDisplay{
+    align-items: center;
+}
+
+.dataDisplay span{
+    background: #f4f4f4;
+}
+
+ol li{
+    list-style-type: none;
+    padding-left:9px;
+    margin: 5px;
+}
+
+.material-icons{
+    float: right;
+}
+
+span{
+    padding-left: 150px;
+    margin-right: 350px;
+    
+}
