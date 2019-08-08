@@ -1,49 +1,55 @@
-.container{
+.container {
     background: #f4f4f4;
-    align-items: center; 
+    align-items: center;
     height: 100vh;
 }
 
-h2{
+h2 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 34px;
     color: #333333;
     text-align: center;
-    
-    height: 44px;  
+
+    height: 44px;
     padding-top: 10px;
 
 }
 
-.listitem{
+h3 {
+    background: #b9adad;
+    margin-left: 35px;
+}
+
+.listitem {
     margin: 10px;
     color: #333333;
-    font-family: Arial, Helvetica, sans-serif; 
+    font-family: Arial, Helvetica, sans-serif;
     padding: 18px;
     background: #ffffff;
     border-radius: 6px;
 }
 
-.dataDisplay{
+.dataDisplay {
     align-items: center;
 }
 
-.dataDisplay span{
+.dataDisplay span {
     background: #f4f4f4;
 }
 
-ol li{
+ol li {
     list-style-type: none;
-    padding-left:9px;
+    padding-left: 9px;
     margin: 5px;
 }
 
-.material-icons{
+.material-icons {
     float: right;
 }
 
-span{
+span {
+    width: 250px;
     padding-left: 150px;
     margin-right: 350px;
-    
+
 }
