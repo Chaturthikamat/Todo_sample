@@ -9,15 +9,20 @@ h2 {
     font-size: 34px;
     color: #333333;
     text-align: center;
-
     height: 44px;
     padding-top: 10px;
 
 }
 
 h3 {
-    background: #b9adad;
+    background: #53a553;
     margin-left: 35px;
+    height: 34px;
+    border-radius: 1px;
+    width: 97%;
+    margin-left: 50px;
+    opacity: 0.9;
+    padding-top: 5px;
 }
 
 .listitem {
