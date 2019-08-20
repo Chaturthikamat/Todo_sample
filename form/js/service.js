@@ -3,13 +3,20 @@
 	 debugger;
  	$.ajax({
  		type: 'GET',
- 		url: 'https://jsonplaceholder.typicode.com/users',
+ 		url: ' http://localhost:3000/users',
  		success: function (response) {
  			debugger;
  			console.log(response);
  			callback(response);
  		}
  	});
+ }
+ function AddData(){
+	 //creating users
+ }
+
+ function UpdateData(id){
+	//edit users
  }
  
 
