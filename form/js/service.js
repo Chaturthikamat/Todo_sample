@@ -1,45 +1,106 @@
  //get data  
- function GetData() {
- 	var $data = $('#dataDisplay');
- 	
+ function GetData(callback) {
+	 debugger;
  	$.ajax({
  		type: 'GET',
  		url: 'https://jsonplaceholder.typicode.com/users',
- 		success: function (data) {
-			debugger;
- 			return data;
+ 		success: function (response) {
+ 			debugger;
+ 			console.log(response);
+ 			callback(response);
  		}
  	});
- 	alert('success');
- };
+ }
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ //  function GetData(callback) {
+ //  	var $data = $('#dataDisplay');
+
+ //  	$.ajax({
+ //  		type: 'GET',
+ //  		url: 'https://jsonplaceholder.typicode.com/users',
+ //  		success: function (data) {
+ // 			debugger;
+ //  			return data;
+ //  		}
+ // 	 });
+
+ //  	alert('success');
+ //  };
 
  //delete the selected user
-//  $(function delete(userId) {
-//  	var user_id = 1; //UserId.id;
-//  	$.ajax({
-//  		method: 'DELETE',
-//  		url: 'https://jsonplaceholder.typicode.com/posts/${userId}',
-//  		success: function () {
-//  			//console.log(this);
-//  			return data;
-//  		}
-//  	});
+ //  $(function delete(userId) {
+ //  	var user_id = 1; //UserId.id;
+ //  	$.ajax({
+ //  		method: 'DELETE',
+ //  		url: 'https://jsonplaceholder.typicode.com/posts/${userId}',
+ //  		success: function () {
+ //  			//console.log(this);
+ //  			return data;
+ //  		}
+ //  	});
 
-//  });
-
-
-//  function update(payload) {
-//  	$.ajax({
-//  		method: 'UPDATE',
-//  		url: 'https://jsonplaceholder.typicode.com/posts/${userId}',
-//  		success: function () {
-//  			//console.log(this);
-//  			$(this).remove();
-//  		}
-//  	});
-//  }
+ //  });
 
 
+ //  function update(payload) {
+ //  	$.ajax({
+ //  		method: 'UPDATE',
+ //  		url: 'https://jsonplaceholder.typicode.com/posts/${userId}',
+ //  		success: function () {
+ //  			//console.log(this);
+ //  			$(this).remove();
+ //  		}
+ //  	});
+ //  }
 
 
 
@@ -92,13 +153,7 @@
 
 
 
-
-
-
-
-
-
- // //function to add data in the array
+ // //function to add data in the array localStorage functions
  // function AddData(formData) {
  // console.log(getData());
  // let users = getData()
