@@ -29,7 +29,7 @@ h2{
   box-shadow: 2px 2px;
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.9);
   overflow: hidden;
-  height: 60%;
+  height: 80%;
 }
 
 .form_group {
@@ -134,4 +134,12 @@ input[type="tel"] {
 	align-items: right;
 	overflow: hidden;
 	margin-top: 30px;
+}
+
+#back_btn{
+  display: inline-block;
+  vertical-align: top;
+  float: left;
+  width: 110px;
+  margin-left: 50px;
 }

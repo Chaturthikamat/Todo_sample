@@ -12,7 +12,7 @@ h2 {
     text-align: center;
     height: 44px;
     padding-top: 10px;
-
+    font-weight: 700;
 }
 
 h3 {
@@ -59,4 +59,12 @@ span {
     padding-left: 150px;
     margin-right: 350px;
 
+}
+
+#back_btn{
+    display: inline-block;
+    vertical-align: top;
+    float:left;
+    width: 110px;
+    margin-left: 50px;
 }

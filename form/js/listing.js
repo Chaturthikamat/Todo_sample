@@ -30,11 +30,12 @@ $(document).ready(function () {
 //delete the user on click
 $('#dataDisplay').on('click', '.delete', function () {
     $(this).parent().remove();
+    $("#dataDisplay").append('<div class="alert alert-danger ">' + "<strong> Deleted! </strong>" + "The user is deleted" +'</div>');
 });
 
 //update the user on click
 $('#dataDisplay').on('click', '.edit', function () {
-    //window.location.href = "../index.html";
+    window.location.href = "edit_file.html";
     $(this).parent().attr('contenteditable', 'true');
     $(this).append('<i class="material-icons save">' + "save" + '</i>');
 });
