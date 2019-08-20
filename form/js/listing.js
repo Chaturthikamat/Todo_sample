@@ -18,7 +18,7 @@ $(document).ready(function () {
         var data = response;
         var $data = $('#dataDisplay');
         $.each(data, function (i, users) {
-            $data.append('<li>' + '<span class="table .table-striped .table-hover">' + users.name + '</span>' + ' <span class="table .table-striped .table-hover">' + users.email + '</span>' + ' </li>');
+            $data.append('<li>' + '<span class="table .table-striped .table-hover">' + users.first_name + '</span>' + ' <span class="table .table-striped .table-hover">' + users.email + '</span>' + ' </li>');
         });
         //adds li dynamically 
         $("li").append('<i class="material-icons delete ">' + "delete" + '</i>');

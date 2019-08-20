@@ -11,12 +11,22 @@
  		}
  	});
  }
- function AddData(){
-	 //creating users
+ function AddData(userdata){
+	 $.ajax({
+		type: 'POST',
+		data:userdata,
+		url: ' http://localhost:3000/users',
+		success: function (response) {
+			debugger;
+			console.log(response);
+		}
+	});
  }
 
- function UpdateData(id){
-	//edit users
+
+
+ function updateData(){
+	 
  }
  
 
