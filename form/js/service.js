@@ -1,34 +1,40 @@
  //get data  
  function GetData(callback) {
-	 debugger;
+ 	debugger;
  	$.ajax({
  		type: 'GET',
  		url: ' http://localhost:3000/users',
  		success: function (response) {
- 			debugger;
  			console.log(response);
  			callback(response);
  		}
  	});
  }
- function AddData(userdata){
-	 $.ajax({
-		type: 'POST',
-		data:userdata,
-		url: ' http://localhost:3000/users',
-		success: function (response) {
-			debugger;
-			console.log(response);
-		}
-	});
+
+ function AddData(userdata) {
+ 	$.ajax({
+ 		type: 'POST',
+ 		data: userdata,
+ 		url: ' http://localhost:3000/users',
+ 		success: function (response) {
+ 			console.log(response);
+ 		}
+ 	});
  }
 
+ function updateData() {
+ 	$.ajax({
+ 		type: 'PUT',
+ 		dataType: 'application/json',
+ 		url: ' http://localhost:3000/users',
+ 		headers: {
+ 			"X-HTTP-Method-Override": "PUT"
+ 		},
+ 		data: '{"name": "Dave"}'
+ 	});
 
-
- function updateData(){
-	 
  }
- 
+
 
 
 

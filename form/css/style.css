@@ -57,7 +57,6 @@ h2{
   background: green;
   color: black;
   border: none;
-  padding: 18px 99px;
   
 }
 
@@ -118,7 +117,7 @@ input[type="tel"] {
 	float:left;
 	width: 50%;
 	display: block;
-	height: 50px;
+	height: auto;
 	align-items: left;
 	overflow: hidden;
 	padding: 15px;
@@ -129,7 +128,7 @@ input[type="tel"] {
 	float: left;
 	width: 50%;
 	display: block;
-	height: 50px;
+	height: auto;
 	padding: 40px;
 	align-items: right;
 	overflow: hidden;
@@ -142,4 +141,18 @@ input[type="tel"] {
   float: left;
   width: 110px;
   margin-left: 50px;
+}
+
+#editbtn{
+  background: #33cc33;
+  color: #fff;
+  text-decoration: bold;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 9px;
+  cursor: pointer;
+  font-size: 19px;
+  margin-top: 30px;
+  margin-left: -10px;
+
 }

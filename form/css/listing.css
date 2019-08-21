@@ -46,12 +46,13 @@ h3 {
 ol li {
     list-style-type: none;
     margin: 20px;
-    border-bottom: 1px rgb(134, 132, 132,0.3) solid;
+    border-bottom: 1px rgb(134, 132, 132, 0.3) solid;
     padding-bottom: 15px;
 }
 
 .material-icons {
     float: right;
+    cursor: pointer;
 }
 
 span {
@@ -61,10 +62,10 @@ span {
 
 }
 
-#back_btn{
+#back_btn {
     display: inline-block;
     vertical-align: top;
-    float:left;
+    float: left;
     width: 110px;
     margin-left: 50px;
 }

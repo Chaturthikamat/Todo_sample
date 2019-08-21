@@ -1,15 +1,3 @@
-// var display = JSON.parse(localStorage.getItem('UserData'));
-//     for (i = 0; i < display.length; i++) {
-//         let liItem = "<li>" + "<span>" + display[i].firstname + "</span>" + " " + "<span>" + display[i].email + "</span>" + "<i class=" + "material-icons" + "></i>" + "</li>";
-//         $("ol").append(liItem);
-//         $("li").addClass("listitem");
-//         $("li").attr('id', i);
-// }
-// $("li").append('<i class="material-icons">' + "delete" + '</i>');
-
-
-
-
 //Getting the data from the API
 $(document).ready(function () {
 
@@ -30,25 +18,62 @@ $(document).ready(function () {
 //delete the user on click
 $('#dataDisplay').on('click', '.delete', function () {
     $(this).parent().remove();
-    $("#dataDisplay").append('<div class="alert alert-danger ">' + "<strong> Deleted! </strong>" + "The user is deleted" +'</div>');
+    $("#dataDisplay").append('<div class="alert alert-danger ">' + "<strong> Deleted! </strong>" + "The user is deleted" + '</div>');
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //update the user on click
 $('#dataDisplay').on('click', '.edit', function () {
-    window.location.href = "edit_file.html";
-    $(this).parent().attr('contenteditable', 'true');
-    $(this).append('<i class="material-icons save">' + "save" + '</i>');
+
+    var data = $('#dataDisplay');
+    $.each(data, function (i, users) {
+        var id = users.id;
+        console.log(id);
+    });
 });
 
-
+// window.location.href = "edit_file.html";
+// $(this).parent().attr('contenteditable', 'true');
+// $(this).append('<i class="material-icons save">' + "save" + '</i>');
 
 
 
 
 // $().cluc {
-//     deletUser(userid)
 // }
 
 // //on click of edit => {
 // updateUser()
 // // }
+
+
+
+
+
+
+
+
+
+
+
+//setting the list using localStorage
+// var display = JSON.parse(localStorage.getItem('UserData'));
+//     for (i = 0; i < display.length; i++) {
+//         let liItem = "<li>" + "<span>" + display[i].firstname + "</span>" + " " + "<span>" + display[i].email + "</span>" + "<i class=" + "material-icons" + "></i>" + "</li>";
+//         $("ol").append(liItem);
+//         $("li").addClass("listitem");
+//         $("li").attr('id', i);
+// }
+// $("li").append('<i class="material-icons">' + "delete" + '</i>');

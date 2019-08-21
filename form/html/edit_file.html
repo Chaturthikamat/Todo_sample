@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <h2><button id="back_btn" class="btn btn-success" onclick="window.location.href='html/display.html'">Back</button>
+    <h2><button id="back_btn" class="btn btn-success" onclick="window.location.href='display.html'">Back</button>
         The edit page</h2>
 
     <div class="container">
@@ -21,52 +21,38 @@
         <form id="survey_form">
             <div class="right_form_group">
                 <label class="useid">First name</label>
-                <input type="text" name="fname" class="form-content" id="fname" placeholder="Enter your First name">
+                <input type="text" name="fname" class="form-content" id="fname" placeholder="Enter your First name"
+                    value="alisha">
             </div>
             <span class="errorfield" id="fname_error"> </span>
 
             <div class="right_form_group">
                 <label class="useid"> Last name</label>
-                <input type="text" name="lname" class="form-content" id="lname" placeholder="Enter your Last name">
+                <input type="text" name="lname" class="form-content" id="lname" placeholder="Enter your Last name"
+                    value="kamat">
             </div>
             <span class="errorfield" id="name_error"> </span>
 
             <div class="right_form_group">
                 <label class="useid">email</label>
-                <input type="email" name="email" class="form-content" id="email" placeholder="Enter your email address">
+                <input type="email" name="email" class="form-content" id="email" placeholder="Enter your email address"
+                    value="chaturthi.ninestack.com">
             </div>
             <span class="errorfield" id="useremail"> </span>
 
             <div class="right_form_group">
                 <label class="useid">mobile</label>
-                <input type="tel" name="mobnum" class="form-content" id="mobnum" placeholder="Enter your number">
+                <input type="tel" name="mobnum" class="form-content" id="mobnum" placeholder="Enter your number"
+                    value="9874563110">
             </div>
             <span id="usernum"> </span>
 
-            <div class="form_group" id="left_form_group">
-                <label> hobbies: </label>
-                <input class="userinputright" id="firsthobby" name="hobbies" type="checkbox" value="Reading" />
-                <label class="userinputright">Reading</label>
-                <input class="userinputright" id="secondhobby" name="hobbies" type="checkbox" value="Writing" />
-                <label class="userinputright"> Writing</label>
-                <input class="userinputright" id="thirdhobby" name="hobbies" type="checkbox" value="Singing" />
-                <label class="userinputright">Singing</label>
-                <p id="error_message_checkbox"></p>
-            </div>
+            <button value="submit" id="editbtn" onclick="updateData()"> Save changes </button>
 
-
-            <div class="form_group" id="left_form_group">
-
-                <label class="userinputright">Gender:</label>
-                <input class="userinputright" type="radio" name="gender" id="male" value="Mr.  " />
-                <label class="userinputright">Male</label>
-                <input class="userinputright" type="radio" name="gender" id="female" value="Mrs.  " />
-                <label class="userinputright"> Female</label>
-                <p id="error_message"></p>
-            </div>
-
-
-            <button value="submit" id="btn">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script src="../js/service.js"></script>
+            <script src="../js/listing.js"></script>
+            <script src="../js/edit.js"></script>
 
 </body>
 
