@@ -27,8 +27,9 @@ $('#dataDisplay').on('click', '.delete', function () {
 //update the user on click
 $('#dataDisplay').on('click', '.edit', function () {
     let id = $(this).parent().attr("id");
-    editUsers(id);
+    debugger;
     window.location.href = "edit_file.html";
+    editUsers(id);
 })
 
 

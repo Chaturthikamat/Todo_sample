@@ -1,25 +1,18 @@
 {
   "users": [
     {
-      "fname": "alisha",
-      "lname": "kamat",
-      "email": "chaturthi.kamat@ninestack.com",
-      "mobnum": "9086696966",
-      "id": 1
-    },
-    {
       "fname": "Chaturthi",
       "lname": "Kamat",
       "email": "ninstack@gmail.com",
       "mobnum": "9997774431",
-      "id": 2
+      "id": 1
     },
     {
       "fname": "ninestack",
       "lname": "Porvorim",
       "email": "bsya@gm.com",
       "mobnum": "9966657676",
-      "id": 3
+      "id": 2
     }
   ]
 }
