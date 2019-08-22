@@ -4,7 +4,7 @@ $(document).ready(function () {
         var data = response;
         var $data = $('#dataDisplay');
         $.each(data, function (i, users) {
-            $data.append(`<li id="${users.id}">` + users.id + '<span class="table .table-striped .table-hover">' + users.first_name + '</span>' + ' <span class="table .table-striped .table-hover">' + users.email + '</span>' + ' </li>');
+            $data.append(`<li id="${users.id}">` + users.id + '<span class="table .table-striped .table-hover">' + users.fname + '</span>' + ' <span class="table .table-striped .table-hover">' + users.email + '</span>' + ' </li>');
         });
 
         //adds li dynamically 
@@ -27,7 +27,8 @@ $('#dataDisplay').on('click', '.delete', function () {
 //update the user on click
 $('#dataDisplay').on('click', '.edit', function () {
     let id = $(this).parent().attr("id");
-    editUsers(userId)(id);
+    editUsers(id);
+    window.location.href = "edit_file.html";
 })
 
 

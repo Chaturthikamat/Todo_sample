@@ -58,6 +58,3 @@ function getFormData() {
 		mobnum: mobnum
 	};
 }
-
-
-

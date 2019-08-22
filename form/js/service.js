@@ -21,11 +21,22 @@
  	});
  }
 
- function updateData() {
+ function deleteUser(id) {
+ 	$.ajax({
+ 		type: 'DELETE',
+ 		dataType: 'application/json',
+ 		url: ' http://localhost:3000/users/' + id,
+ 		success: function () {
+ 			alert(" The user is deleted ");
+ 		}
+ 	});
+ }
+
+ function updateData(id) {
  	$.ajax({
  		type: 'PUT',
  		dataType: 'application/json',
- 		url: ' http://localhost:3000/users',
+ 		url: ' http://localhost:3000/users/' + id,
  		headers: {
  			"X-HTTP-Method-Override": "PUT"
  		},
@@ -33,18 +44,6 @@
  	});
 
  }
-
- function deleteUser(id) {
- 	$.ajax({
- 		type: 'DELETE',
- 		dataType: 'application/json',
- 		url: ' http://localhost:3000/users/' + id,
- 		success: function () {
-			 alert(" The user is deleted ");
- 		}
- 	});
- }
-
 
 
 
