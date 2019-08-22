@@ -1,6 +1,5 @@
  //get data  
  function GetData(callback) {
- 	debugger;
  	$.ajax({
  		type: 'GET',
  		url: ' http://localhost:3000/users',
@@ -35,8 +34,16 @@
 
  }
 
-
-
+ function deleteUser(id) {
+ 	$.ajax({
+ 		type: 'DELETE',
+ 		dataType: 'application/json',
+ 		url: ' http://localhost:3000/users/' + id,
+ 		success: function () {
+			 alert(" The user is deleted ");
+ 		}
+ 	});
+ }
 
 
 

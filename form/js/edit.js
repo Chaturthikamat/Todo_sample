@@ -1,7 +1,7 @@
 //var edit= editUsers(UserId)
 function editUsers(userId) {
-    $("#BankAccountName").val(jsonData[userId]['first_name']);
-    $("#CurrencyCode").val(jsonData[userId]['last_name']);
-    $("#DepositDate").val(jsonData[userId]['email']);
-    $("#PaymentChannel").val(jsonData[userId]['mobnum'])
+    $("#fname").val(jsonData[userId]['first_name']);
+    $("#lname").val(jsonData[userId]['last_name']);
+    $("#email").val(jsonData[userId]['email']);
+    $("#mobnum").val(jsonData[userId]['mobnum'])
 }

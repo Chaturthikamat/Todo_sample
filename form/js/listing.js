@@ -1,13 +1,12 @@
 //Getting the data from the API
 $(document).ready(function () {
-
     GetData(function (response) {
-        debugger;
         var data = response;
         var $data = $('#dataDisplay');
         $.each(data, function (i, users) {
-            $data.append('<li>' + '<span class="table .table-striped .table-hover">' + users.first_name + '</span>' + ' <span class="table .table-striped .table-hover">' + users.email + '</span>' + ' </li>');
+            $data.append(`<li id="${users.id}">` + users.id + '<span class="table .table-striped .table-hover">' + users.first_name + '</span>' + ' <span class="table .table-striped .table-hover">' + users.email + '</span>' + ' </li>');
         });
+
         //adds li dynamically 
         $("li").append('<i class="material-icons delete ">' + "delete" + '</i>');
         $("li").append('<i class="material-icons edit ">' + "edit" + '</i>');
@@ -15,34 +14,23 @@ $(document).ready(function () {
 });
 
 
-//delete the user on click
+//delete the user on click 
+
 $('#dataDisplay').on('click', '.delete', function () {
-    $(this).parent().remove();
-    $("#dataDisplay").append('<div class="alert alert-danger ">' + "<strong> Deleted! </strong>" + "The user is deleted" + '</div>');
+    debugger;
+    let id = $(this).parent().attr("id");
+    deleteUser(id);
 });
-
-
-
-
-
-
-
-
-
-
-
 
 
 
 //update the user on click
 $('#dataDisplay').on('click', '.edit', function () {
+    let id = $(this).parent().attr("id");
+    editUsers(userId)(id);
+})
 
-    var data = $('#dataDisplay');
-    $.each(data, function (i, users) {
-        var id = users.id;
-        console.log(id);
-    });
-});
+
 
 // window.location.href = "edit_file.html";
 // $(this).parent().attr('contenteditable', 'true');
@@ -50,13 +38,6 @@ $('#dataDisplay').on('click', '.edit', function () {
 
 
 
-
-// $().cluc {
-// }
-
-// //on click of edit => {
-// updateUser()
-// // }
 
 
 
