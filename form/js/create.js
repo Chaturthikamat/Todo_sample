@@ -12,7 +12,6 @@ $("#btn").click(function (e) {
 
 //validates the UserData
 function validation() {
-	debugger;
 	let formData = getFormData()
 	let validateValue = false;
 	let fname = formData.fname;
@@ -28,7 +27,6 @@ function validation() {
 		$("#name_error")[0].innerHTML = "** Error: Please enter the username, do not enter number";
 		validateValue = false;
 	}
-
 
 	if (email == "") {
 		$("#useremail")[0].innerHTML = "** Error: Please enter the email Id in valid format";

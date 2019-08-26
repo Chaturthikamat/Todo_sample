@@ -17,7 +17,6 @@ getdataUpdate(id, function callback(result) {
     $('#lastname').val(data.lname);
     $('#useremail').val(data.email);
     $('#mobilenum').val(data.mobnum);
-    return id;
 });
 
 $("#editbtn").click(function (e) {
@@ -35,9 +34,6 @@ $("#editbtn").click(function (e) {
         mobnum: mobilenum,
         id: userid
     }
-    alert("The data is successfully updated at the id: "+id);
     putData(userdata)
+    alert("The data is successfully updated at the id: " + id);
 });
-
-
-

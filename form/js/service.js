@@ -32,28 +32,28 @@
  	});
  }
 
- function getdataUpdate(id,callback) {
- 		$.ajax({
- 			type: 'GET',
- 			url: ' http://localhost:3000/users/' + id,
- 			success: function (result) {
- 				console.log(result);
- 				callback(result);
- 			}
- 		})
-	 }
-	 
-function putData(userdata){
-	$.ajax({
-		type: 'PUT',
-		data: userdata,
-		url: ' http://localhost:3000/users/' + id,
-		success: function (response) {
-			window.location.href = "display.html";
-		}
-	})
-}
- 
+ function getdataUpdate(id, callback) {
+ 	$.ajax({
+ 		type: 'GET',
+ 		url: ' http://localhost:3000/users/' + id,
+ 		success: function (result) {
+ 			console.log(result);
+ 			callback(result);
+ 		}
+ 	})
+ }
+
+ function putData(userdata) {
+ 	$.ajax({
+ 		type: 'PUT',
+ 		data: userdata,
+ 		url: ' http://localhost:3000/users/' + userdata.id,
+ 		success: function (response) {
+ 			console.log("success");
+ 		}
+ 	})
+ }
+
 
 
 

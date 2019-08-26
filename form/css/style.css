@@ -7,13 +7,13 @@ body {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
-h2{
-	background: #f4f4f4;
-	color: #333;
-	text-align: center;
-	margin-bottom:0;
-	margin-top:40px;
-	font-size: 34px;
+h2 {
+  background: #f4f4f4;
+  color: #333;
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 40px;
+  font-size: 34px;
 }
 
 .container {
@@ -57,7 +57,7 @@ h2{
   background: green;
   color: black;
   border: none;
-  
+
 }
 
 .errorfield {
@@ -65,10 +65,8 @@ h2{
   font-size: 12px;
   color: red;
   font-weight: bold;
-  display: inline;
-
-  padding-right: 0;
-  margin: 0;
+  display: block;
+  float: left;
 }
 
 input[type="text"] {
@@ -113,29 +111,29 @@ input[type="tel"] {
   display: block;
 }
 
-.right_form_group{
-	float:left;
-	width: 50%;
-	display: block;
-	height: auto;
-	align-items: left;
-	overflow: hidden;
-	padding: 15px;
-	
+.right_form_group {
+  float: left;
+  width: 50%;
+  display: block;
+  height: auto;
+  align-items: left;
+  overflow: hidden;
+  padding: 15px;
+
 }
 
-.left_form_group{
-	float: left;
-	width: 50%;
-	display: block;
-	height: auto;
-	padding: 40px;
-	align-items: right;
-	overflow: hidden;
-	margin-top: 30px;
+.left_form_group {
+  float: left;
+  width: 50%;
+  display: block;
+  height: auto;
+  padding: 40px;
+  align-items: right;
+  overflow: hidden;
+  margin-top: 30px;
 }
 
-#back_btn{
+#back_btn {
   display: inline-block;
   vertical-align: top;
   float: left;
@@ -143,7 +141,7 @@ input[type="tel"] {
   margin-left: 50px;
 }
 
-#editbtn{
+#editbtn {
   background: #33cc33;
   color: #fff;
   text-decoration: bold;
@@ -155,4 +153,17 @@ input[type="tel"] {
   margin-top: 30px;
   margin-left: -10px;
 
+}
+
+#listing {
+  background: #33cc33;
+  color: #fff;
+  padding: 13px 115px;
+  border: 1px solid;
+  border-radius: 9px;
+  cursor: pointer;
+  font-size: 12px;
+  float: left;
+  overflow: hidden;
+ font-weight: 400;
 }

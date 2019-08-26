@@ -42,7 +42,6 @@ $('#dataDisplay').on('click', '.edit', function () {
 
 
 
-
 //setting the list using localStorage
 // var display = JSON.parse(localStorage.getItem('UserData'));
 //     for (i = 0; i < display.length; i++) {
