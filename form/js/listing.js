@@ -1,4 +1,4 @@
-//Getting the data from the API
+//Getting the data from the json Server
 $(document).ready(function () {
     GetData(function (response) {
         var data = response;
@@ -15,9 +15,7 @@ $(document).ready(function () {
 
 
 //delete the user on click 
-
 $('#dataDisplay').on('click', '.delete', function () {
-    debugger;
     let id = $(this).parent().attr("id");
     deleteUser(id);
 });
@@ -27,16 +25,10 @@ $('#dataDisplay').on('click', '.delete', function () {
 //update the user on click
 $('#dataDisplay').on('click', '.edit', function () {
     let id = $(this).parent().attr("id");
-    debugger;
-    window.location.href = "edit_file.html";
-    editUsers(id);
+    console.log(id);
+    window.location.href = "edit_file.html?id=" + id + "";
 })
 
-
-
-// window.location.href = "edit_file.html";
-// $(this).parent().attr('contenteditable', 'true');
-// $(this).append('<i class="material-icons save">' + "save" + '</i>');
 
 
 

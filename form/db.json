@@ -1,18 +1,53 @@
 {
   "users": [
     {
-      "fname": "Chaturthi",
-      "lname": "Kamat",
-      "email": "ninstack@gmail.com",
-      "mobnum": "9997774431",
-      "id": 1
+      "fname": "khaleesi",
+      "lname": "ninestack",
+      "email": "khaleesi@got.com",
+      "mobnum": "9874521452",
+      "id": 2
     },
     {
-      "fname": "ninestack",
-      "lname": "Porvorim",
-      "email": "bsya@gm.com",
-      "mobnum": "9966657676",
-      "id": 2
+      "fname": "sam",
+      "lname": "tarli",
+      "email": "same.tarli@gmail.com",
+      "mobnum": "9898338931",
+      "id": 3
+    },
+    {
+      "fname": "tersene",
+      "lname": "Uleri",
+      "email": "trner@uleri.com",
+      "mobnum": "7845123690",
+      "id": 5
+    },
+    {
+      "fname": "Chaturthi",
+      "lname": "testtwoedit",
+      "email": "gem@code.com",
+      "mobnum": "9879798797",
+      "id": 6
+    },
+    {
+      "fname": "Alisha",
+      "lname": "Editkamat",
+      "email": "alishatese@test.com",
+      "mobnum": "9874562310",
+      "id": 7
+    },
+    {
+      "fname": "sunrise",
+      "lname": "mocktail",
+      "email": "sunrise@mocktail.com",
+      "mobnum": "9874521452",
+      "id": 8
+    },
+    {
+      "fname": "delilah",
+      "lname": "jonas",
+      "email": "delilah@yahoo.com",
+      "mobnum": "9874562310",
+      "id": 9
     }
   ]
 }

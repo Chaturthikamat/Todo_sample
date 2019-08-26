@@ -32,18 +32,28 @@
  	});
  }
 
- function updateData(id) {
- 	$.ajax({
- 		type: 'PUT',
- 		dataType: 'application/json',
- 		url: ' http://localhost:3000/users/' + id,
- 		headers: {
- 			"X-HTTP-Method-Override": "PUT"
- 		},
- 		data: '{"name": "Dave"}'
- 	});
-
- }
+ function getdataUpdate(id,callback) {
+ 		$.ajax({
+ 			type: 'GET',
+ 			url: ' http://localhost:3000/users/' + id,
+ 			success: function (result) {
+ 				console.log(result);
+ 				callback(result);
+ 			}
+ 		})
+	 }
+	 
+function putData(userdata){
+	$.ajax({
+		type: 'PUT',
+		data: userdata,
+		url: ' http://localhost:3000/users/' + id,
+		success: function (response) {
+			window.location.href = "display.html";
+		}
+	})
+}
+ 
 
 
 
