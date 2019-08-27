@@ -1,74 +1,75 @@
 <html>
 
 <head>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title> Form | Index</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title> Form | Index</title>
 </head>
 
 
 <body>
-  <button id="listing" onclick="window.location.href='html/display.html'">View List</button>
-  <h2> Survey form </h2>
-  <div class="container">
+    <button id="listing" onclick="window.location.href='html/display.html'">View List</button>
+    <h2> Survey form </h2>
+    <div class="container">
 
-    <form id="survey_form">
-      <div class="right_form_group">
-        <label class="useid">First name</label>
-        <input type="text" name="fname" class="form-content" id="fname" placeholder="Enter your First name">
-        <span class="errorfield" id="fname_error"> </span>
-      </div>
-      
-
-      <div class="right_form_group">
-        <label class="useid"> Last name</label>
-        <input type="text" name="lname" class="form-content" id="lname" placeholder="Enter your Last name">
-        <span class="errorfield" id="name_error"> </span>
-      </div>
-      
-
-      <div class="right_form_group">
-        <label class="useid">email</label>
-        <input type="email" name="email" class="form-content" id="email" placeholder="Enter your email address">
-        <span class="errorfield" id="useremail"> </span>
-      </div>
-      
-
-      <div class="right_form_group">
-        <label class="useid">mobile</label>
-        <input type="tel" name="mobnum" class="form-content" id="mobnum" placeholder="Enter your number">
-        <span class="errorfield" id="usernum"> </span>
-      </div>
-      
-
-      <div class="form_group" id="left_form_group">
-        <label> hobbies: </label>
-        <input class="userinputright" id="firsthobby" name="hobbies" type="checkbox" value="Reading" />
-        <label class="userinputright">Reading</label>
-        <input class="userinputright" id="secondhobby" name="hobbies" type="checkbox" value="Writing" />
-        <label class="userinputright"> Writing</label>
-        <input class="userinputright" id="thirdhobby" name="hobbies" type="checkbox" value="Singing" />
-        <label class="userinputright">Singing</label>
-        <p id="error_message_checkbox"></p>
-      </div>
+        <form id="survey_form">
+            <div class="right_form_group">
+                <label class="useid">First name</label>
+                <input type="text" name="fname" class="form-content" id="fname" placeholder="Enter your First name">
+                <span class="errorfield" id="fname_error"> </span>
+            </div>
 
 
-      <div class="form_group" id="left_form_group">
-
-        <label class="userinputright">Gender:</label>
-        <input class="userinputright" type="radio" name="gender" id="male" value="Mr.  " />
-        <label class="userinputright">Male</label>
-        <input class="userinputright" type="radio" name="gender" id="female" value="Mrs.  " />
-        <label class="userinputright"> Female</label>
-        <p id="error_message"></p>
-      </div>
+            <div class="right_form_group">
+                <label class="useid"> Last name</label>
+                <input type="text" name="lname" class="form-content" id="lname" placeholder="Enter your Last name">
+                <span class="errorfield" id="name_error"> </span>
+            </div>
 
 
-      <button value="submit" id="btn"> Submit </button>
-    </form>
-  </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="js/create.js"></script>
-  <script src="js/service.js"></script>
+            <div class="right_form_group">
+                <label class="useid">email</label>
+                <input type="email" name="email" class="form-content" id="email" placeholder="Enter your email address">
+                <span class="errorfield" id="useremail"> </span>
+            </div>
+
+
+            <div class="right_form_group">
+                <label class="useid">mobile</label>
+                <input type="tel" name="mobnum" class="form-content" id="mobnum" placeholder="Enter your number">
+                <span class="errorfield" id="usernum"> </span>
+            </div>
+
+
+            <div class="form_group" id="left_form_group">
+                <label> hobbies: </label>
+                <input class="userinputright" id="firsthobby" name="hobbies" type="checkbox" value="Reading" />
+                <label class="userinputright">Reading</label>
+                <input class="userinputright" id="secondhobby" name="hobbies" type="checkbox" value="Writing" />
+                <label class="userinputright"> Writing</label>
+                <input class="userinputright" id="thirdhobby" name="hobbies" type="checkbox" value="Singing" />
+                <label class="userinputright">Singing</label>
+                <p id="error_message_checkbox"></p>
+            </div>
+
+
+            <div class="form_group" id="left_form_group">
+
+                <label class="userinputright">Gender:</label>
+                <input class="userinputright" type="radio" name="gender" id="male" value="Mr.  " />
+                <label class="userinputright">Male</label>
+                <input class="userinputright" type="radio" name="gender" id="female" value="Mrs.  " />
+                <label class="userinputright"> Female</label>
+                <p id="error_message"></p>
+            </div>
+
+
+            <button value="submit" id="btn"> Submit </button>
+        </form>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/create.js"></script>
+    <script src="js/service.js"></script>
+    <script src="utility/validation.js"></script>
 </body>
 
 </html>

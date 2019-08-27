@@ -1,9 +1,9 @@
 //Getting the data from the json Server
-$(document).ready(function () {
-    GetData(function (response) {
+$(document).ready(function() {
+    GetData(function(response) {
         var data = response;
         var $data = $('#dataDisplay');
-        $.each(data, function (i, users) {
+        $.each(data, function(i, users) {
             $data.append(`<li id="${users.id}">` + users.id + '<span class="table .table-striped .table-hover">' + users.fname + '</span>' + ' <span class="table .table-striped .table-hover">' + users.email + '</span>' + ' </li>');
         });
 
@@ -15,15 +15,13 @@ $(document).ready(function () {
 
 
 //delete the user on click 
-$('#dataDisplay').on('click', '.delete', function () {
+$('#dataDisplay').on('click', '.delete', function() {
     let id = $(this).parent().attr("id");
     deleteUser(id);
 });
 
-
-
 //update the user on click
-$('#dataDisplay').on('click', '.edit', function () {
+$('#dataDisplay').on('click', '.edit', function() {
     let id = $(this).parent().attr("id");
     console.log(id);
     window.location.href = "edit_file.html?id=" + id + "";

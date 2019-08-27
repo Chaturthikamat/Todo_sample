@@ -19,21 +19,33 @@ getdataUpdate(id, function callback(result) {
     $('#mobilenum').val(data.mobnum);
 });
 
-$("#editbtn").click(function (e) {
+
+//validation on click
+$("#editbtn").click(function(e) {
     debugger;
+    let userdata = getuserData()
+    let validate = validation(userdata);
+    console.log(validate);
     e.preventDefault();
-    var userid = id;
+    if (validate) {
+        putData(userdata);
+        alert("the data is added successfully");
+    }
+});
+
+//Takes the data from the form fields and passes it to the validation function
+function getuserData() {
+    debugger;
+    var userid = getUrlParameter('id');
     var first_name = $('#firstname')[0].value;
     var last_name = $('#lastname')[0].value;
     var email = $('#useremail')[0].value;
     var mobilenum = $('#mobilenum')[0].value;
-    let userdata = {
+    return {
         fname: first_name,
         lname: last_name,
         email: email,
         mobnum: mobilenum,
         id: userid
-    }
-    putData(userdata)
-    alert("The data is successfully updated at the id: " + id);
-});
+    };
+}
