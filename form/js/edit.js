@@ -23,11 +23,11 @@ getdataUpdate(id, function callback(result) {
 //validation on click
 $("#editbtn").click(function(e) {
     debugger;
-    let userdata = getuserData()
-    let validate = validation(userdata);
-    console.log(validate);
     e.preventDefault();
-    if (validate) {
+    let userdata = getuserData()
+    let valid = validation(userdata);
+    console.log(valid);
+    if (valid) {
         putData(userdata);
         alert("the data is added successfully");
     }

@@ -1,57 +1,57 @@
  //get data  
  function GetData(callback) {
- 	$.ajax({
- 		type: 'GET',
- 		url: ' http://localhost:3000/users',
- 		success: function (response) {
- 			console.log(response);
- 			callback(response);
- 		}
- 	});
+     $.ajax({
+         type: 'GET',
+         url: ' http://localhost:3000/users',
+         success: function(response) {
+             console.log(response);
+             callback(response);
+         }
+     });
  }
 
  function AddData(userdata) {
- 	$.ajax({
- 		type: 'POST',
- 		data: userdata,
- 		url: ' http://localhost:3000/users',
- 		success: function (response) {
- 			console.log(response);
- 		}
- 	});
+     $.ajax({
+         type: 'POST',
+         data: userdata,
+         url: ' http://localhost:3000/users',
+         success: function(response) {
+             console.log(response);
+         }
+     });
  }
 
  function deleteUser(id) {
- 	$.ajax({
- 		type: 'DELETE',
- 		dataType: 'application/json',
- 		url: ' http://localhost:3000/users/' + id,
- 		success: function () {
- 			alert(" The user is deleted ");
- 		}
- 	});
+     $.ajax({
+         type: 'DELETE',
+         dataType: 'application/json',
+         url: ' http://localhost:3000/users/' + id,
+         success: function() {
+             alert(" The user is deleted ");
+         }
+     });
  }
 
  function getdataUpdate(id, callback) {
- 	$.ajax({
- 		type: 'GET',
- 		url: ' http://localhost:3000/users/' + id,
- 		success: function (result) {
- 			console.log(result);
- 			callback(result);
- 		}
- 	})
+     $.ajax({
+         type: 'GET',
+         url: ' http://localhost:3000/users/' + id,
+         success: function(result) {
+             console.log(result);
+             callback(result);
+         }
+     })
  }
 
- function putData(userdata) {
- 	$.ajax({
- 		type: 'PUT',
- 		data: userdata,
- 		url: ' http://localhost:3000/users/' + userdata.id,
- 		success: function (response) {
- 			console.log("success");
- 		}
- 	})
+ function putData(payload) {
+     $.ajax({
+         type: 'PUT',
+         data: payload,
+         url: ' http://localhost:3000/users/' + payload.id,
+         success: function(response) {
+             console.log("success");
+         }
+     })
  }
 
 
@@ -96,50 +96,6 @@
 
 
 
-
-
-
-
- //  function GetData(callback) {
- //  	var $data = $('#dataDisplay');
-
- //  	$.ajax({
- //  		type: 'GET',
- //  		url: 'https://jsonplaceholder.typicode.com/users',
- //  		success: function (data) {
- // 			debugger;
- //  			return data;
- //  		}
- // 	 });
-
- //  	alert('success');
- //  };
-
- //delete the selected user
- //  $(function delete(userId) {
- //  	var user_id = 1; //UserId.id;
- //  	$.ajax({
- //  		method: 'DELETE',
- //  		url: 'https://jsonplaceholder.typicode.com/posts/${userId}',
- //  		success: function () {
- //  			//console.log(this);
- //  			return data;
- //  		}
- //  	});
-
- //  });
-
-
- //  function update(payload) {
- //  	$.ajax({
- //  		method: 'UPDATE',
- //  		url: 'https://jsonplaceholder.typicode.com/posts/${userId}',
- //  		success: function () {
- //  			//console.log(this);
- //  			$(this).remove();
- //  		}
- //  	});
- //  }
 
 
 
